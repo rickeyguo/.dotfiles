@@ -36,7 +36,6 @@ call plug#end()
 set number                     " Show current line number
 set relativenumber             " Show relative line numbers
 
-set cursorline                 " highlight current line
 
 "Search
 set incsearch           " search as characters are entered
