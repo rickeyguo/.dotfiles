@@ -33,10 +33,17 @@ call plug#end()
 "START OF VIM CUSTOMIZATIONS
 
 "Line numbers. Use relative for all lines except the current one
-set number                     " Show current line number
-set relativenumber             " Show relative line numbers
+set number                    " Show current line number
+set relativenumber            " Show relative line numbers
 
 
 "Search
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matches
+set incsearch                 " search as characters are entered
+set hlsearch                  " highlight matches
+
+
+"netrw instead of nerdTree
+let g:netrw_winsize = -28     " absolute width of netrw window
+let g:netrw_liststyle = 3     " tree-view
+let g:netrw_sort_sequence = '[\/]$,*' " sort is affecting only: directories on the top, files below
+let g:netrw_browse_split = 3  " open file in a new tab
