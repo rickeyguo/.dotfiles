@@ -19,7 +19,8 @@ call plug#begin('~/.vim/plugged')
 
 "List of plugins.
 Plug 'vim-airline/vim-airline'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " installing fzf to both the system and vim
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " installing fzf to the system
+"Plug 'junegunn/fzf.vim' " installing fzf for vim integration
 Plug 'sheerun/vim-polyglot' "a collection of language packs for vim for syntax and indentation support
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
