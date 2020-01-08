@@ -49,3 +49,6 @@ let g:netrw_sort_sequence = '[\/]$,*' " sort is affecting only: directories on t
 let g:netrw_browse_split = 3  " open file in a new tab
 
 
+
+"leader key and fuzzy search mappings
+let mapleader = ','
