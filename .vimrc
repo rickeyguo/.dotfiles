@@ -50,3 +50,5 @@ let g:netrw_browse_split = 3  " open file in a new tab
 
 
 let mapleader = "," "remapping leader key to ,
+nmap <Leader>f :GFiles<CR>
+nmap <Leader>F :Files<CR>
