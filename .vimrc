@@ -52,3 +52,8 @@ let g:netrw_browse_split = 3  " open file in a new tab
 
 "leader key and fuzzy search mappings
 let mapleader = ','
+" This is the default extra key bindings
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
