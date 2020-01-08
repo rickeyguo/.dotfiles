@@ -1,6 +1,6 @@
 "START OF .vimrc
 
-set nocompatible "If you omit this, vim will freak out when handling stuff like line continuations in vimscript.
+set nocompatible "prevent vim freak out when handling stuff like line continuations in vimscript.
 
 " automatic installation of vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
