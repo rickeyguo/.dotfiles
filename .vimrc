@@ -1,7 +1,7 @@
 "START OF .vimrc
 
 set nocompatible "prevent vim freak out when handling stuff like line continuations in vimscript.
-
+set noshowmode "to get rid of mode information since lightline statusline has it
 " automatic installation of vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
 "List of plugins.
 Plug 'vim-airline/vim-airline'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " installing fzf to both the system and vim
-
+Plug 'sheerun/vim-polyglot' "a collection of language packs for vim for syntax and indentation support
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -49,6 +49,3 @@ let g:netrw_sort_sequence = '[\/]$,*' " sort is affecting only: directories on t
 let g:netrw_browse_split = 3  " open file in a new tab
 
 
-let mapleader = "," "remapping leader key to ,
-nmap <Leader>f :GFiles<CR>
-nmap <Leader>F :Files<CR>
