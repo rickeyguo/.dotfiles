@@ -48,11 +48,5 @@ let g:netrw_liststyle = 3     " tree-view
 let g:netrw_sort_sequence = '[\/]$,*' " sort is affecting only: directories on the top, files below
 let g:netrw_browse_split = 3  " open file in a new tab
 
-
-" This is the default extra key bindings
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'split',
-  \ 'ctrl-v': 'vsplit' }
 let mapleader = ","
 nnoremap <silent> <Leader><Space> :FZF<CR>
