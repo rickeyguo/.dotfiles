@@ -19,7 +19,7 @@ call plug#begin('~/.vim/plugged')
 
 "List of plugins.
 Plug 'vim-airline/vim-airline'
-
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " installing fzf to both the system and vim
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
