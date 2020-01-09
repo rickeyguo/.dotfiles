@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
 "List of plugins.
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " installing fzf to the system
 Plug 'sheerun/vim-polyglot' "a collection of language packs for vim for syntax and indentation support
+Plug 'itchyny/lightline.vim' "lightline statusline
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 "END OF PLUGINS
@@ -35,5 +36,4 @@ set hlsearch                  " highlight matches
 
 let mapleader = ","
 nnoremap <silent> <Leader><Space> :FZF<CR>
-let g:airline#extensions#default#section_truncate_width = {}
-  
+set laststatus=2
