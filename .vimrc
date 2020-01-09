@@ -1,7 +1,6 @@
-"START OF .vimrc
-
 set nocompatible "prevent vim freak out when handling stuff like line continuations in vimscript.
 set noshowmode "to get rid of mode information since lightline statusline has it
+
 " automatic installation of vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -12,8 +11,6 @@ endif
 
 "---------------------------------------
 "START OF PLUGINS
-
-
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
@@ -23,15 +20,11 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " installing f
 Plug 'sheerun/vim-polyglot' "a collection of language packs for vim for syntax and indentation support
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
-
-
-
-
-
 "END OF PLUGINS
 "---------------------------------------
-"START OF VIM CUSTOMIZATIONS
 
+
+"START OF VIM CUSTOMIZATIONS
 "Line numbers. Use relative for all lines except the current one
 set number                    " Show current line number
 set relativenumber            " Show relative line numbers
