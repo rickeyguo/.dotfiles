@@ -36,3 +36,5 @@ set hlsearch                  " highlight matches
 
 let mapleader = ","
 nnoremap <silent> <Leader><Space> :FZF<CR>
+let g:airline#extensions#default#section_truncate_width = {}
+  
