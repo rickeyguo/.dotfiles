@@ -50,5 +50,3 @@ let g:netrw_browse_split = 3  " open file in a new tab
 
 let mapleader = ","
 nnoremap <silent> <Leader><Space> :FZF<CR>
-
-set autoread " to allow current file to update when it is changed by a outside source
