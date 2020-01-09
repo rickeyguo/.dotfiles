@@ -41,12 +41,5 @@ set relativenumber            " Show relative line numbers
 set incsearch                 " search as characters are entered
 set hlsearch                  " highlight matches
 
-
-"netrw customized to show directories as a tree instead using nerdTree
-let g:netrw_winsize = -28     " absolute width of netrw window
-let g:netrw_liststyle = 3     " tree-view
-let g:netrw_sort_sequence = '[\/]$,*' " sort is affecting only: directories on the top, files below
-let g:netrw_browse_split = 3  " open file in a new tab
-
 let mapleader = ","
 nnoremap <silent> <Leader><Space> :FZF<CR>
