@@ -25,6 +25,11 @@ call plug#end()
 
 
 "START OF VIM CUSTOMIZATIONS
+
+let g:lightline = { 
+			\ 'colorscheme': 'wombat',
+		       	\ }
+
 "Line numbers. Use relative for all lines except the current one
 set number                    " Show current line number
 set relativenumber            " Show relative line numbers
