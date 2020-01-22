@@ -8,7 +8,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-
 "---------------------------------------
 "START OF PLUGINS
 " Plugins will be downloaded under the specified directory.
