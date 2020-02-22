@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " installing fzf to the system
 Plug 'sheerun/vim-polyglot' "a collection of language packs for vim for syntax and indentation support
 Plug 'itchyny/lightline.vim' "lightline statusline
+Plug 'jeffkreeftmeijer/vim-numbertoggle' "automatic window toggling of relative/absolute line number
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 "END OF PLUGINS
@@ -31,7 +32,7 @@ let g:lightline = {
 
 "Line numbers. Use relative for all lines except the current one
 set number                    " Show current line number
-set relativenumber            " Show relative line numbers
+set number relativenumber     " Show relative line numbers when in focus in tmux
 
 
 "Search
