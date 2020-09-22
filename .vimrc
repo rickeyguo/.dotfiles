@@ -21,6 +21,7 @@ Plug 'sheerun/vim-polyglot' "a collection of language packs for vim for syntax a
 Plug 'itchyny/lightline.vim' "lightline statusline
 Plug 'jeffkreeftmeijer/vim-numbertoggle' "automatic window toggling of relative/absolute line number
 Plug 'Chiel92/vim-autoformat' "code formatting plugin
+Plug 'tpope/vim-commentary' "comment stuff out using commands gcc, gc
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 "END OF PLUGINS
