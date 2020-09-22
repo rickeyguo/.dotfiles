@@ -1,6 +1,8 @@
 set nocompatible "prevent vim freak out when handling stuff like line continuations in vimscript.
 set noshowmode "to get rid of mode information since lightline statusline has it
 
+" testing for changes via yadm
+
 " automatic installation of vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
 	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
