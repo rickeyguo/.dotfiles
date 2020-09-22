@@ -3,9 +3,9 @@ set noshowmode "to get rid of mode information since lightline statusline has it
 
 " automatic installation of vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 "---------------------------------------
@@ -18,6 +18,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " installing f
 Plug 'sheerun/vim-polyglot' "a collection of language packs for vim for syntax and indentation support
 Plug 'itchyny/lightline.vim' "lightline statusline
 Plug 'jeffkreeftmeijer/vim-numbertoggle' "automatic window toggling of relative/absolute line number
+Plug 'Chiel92/vim-autoformat' "code formatting plugin
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 "END OF PLUGINS
@@ -26,9 +27,9 @@ call plug#end()
 
 "START OF VIM CUSTOMIZATIONS
 
-let g:lightline = { 
+let g:lightline = {
 			\ 'colorscheme': 'wombat',
-		       	\ }
+			\ }
 
 "Line numbers. Use relative for all lines except the current one
 set number                    " Show current line number
@@ -42,3 +43,7 @@ set hlsearch                  " highlight matches
 let mapleader = ","
 nnoremap <silent> <Leader><Space> :FZF<CR>
 set laststatus=2
+
+" Code formatting using autoformat plugin upon saving file, require
+" clang-format to be installed on system
+au BufWrite * :Autoformat
