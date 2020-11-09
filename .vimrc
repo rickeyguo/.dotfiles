@@ -22,6 +22,7 @@ Plug 'itchyny/lightline.vim' "lightline statusline
 Plug 'jeffkreeftmeijer/vim-numbertoggle' "automatic window toggling of relative/absolute line number
 Plug 'Chiel92/vim-autoformat' "code formatting plugin
 Plug 'tpope/vim-commentary' "comment stuff out using commands gcc, gc
+Plug 'preservim/nerdtree' "nerdtree
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 "END OF PLUGINS
@@ -50,3 +51,4 @@ set laststatus=2
 " Code formatting using autoformat plugin upon saving file, require
 " clang-format to be installed on system
 au BufWrite * :Autoformat
+map <C-n> :NERDTreeToggle<CR>
