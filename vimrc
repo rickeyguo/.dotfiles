@@ -40,7 +40,7 @@ set incsearch                 " search as characters are entered
 set hlsearch                  " highlight matches
 set ignorecase " case insensitive searching
 set smartcase " but become case sensitive if you type uppercase character
-nnoremap <CR> :noh<CR><CR>
+nnoremap <esc> :noh<CR>
 let mapleader = "\<Space>"
 :imap jk <Esc>
 nnoremap <silent> <Leader><Space> :FZF<CR>
