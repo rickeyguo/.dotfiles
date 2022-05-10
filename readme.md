@@ -6,4 +6,5 @@ My CLI-based workflow is as follows:
 - Tmux
 - Fish shell
 
-![neofetch output](https://github.com/[rickeyguo]/[dotfiles]/blob/[main]/neofetch.jpg?raw=true)
+These config files are kept in a local git repo and placed in various config locations via symbolic links.
+![neofetch output](https://github.com/[rickeyguo]/[dotfiles]/blob/[master]/neofetch.jpg?raw=true)
