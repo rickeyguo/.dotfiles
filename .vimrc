@@ -10,7 +10,6 @@ endif
 "----------------------START OF PLUGINS----------------------
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 	" fuzzy search
-Plug 'tpope/vim-surround' 	  " better control over parentheses, brackets, quotes etc. 
 Plug 'preservim/nerdtree' 	  " nerdtree 
 Plug 'jesseleite/vim-noh' 	  " automatically clearing search highlight when cursor is moved
 Plug 'sheerun/vim-polyglot' 	" syntax and language support
