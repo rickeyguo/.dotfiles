@@ -7,4 +7,4 @@ My CLI-based workflow is as follows:
 - Fish shell
 
 These config files are kept in a local git repo and placed in various config locations via symbolic links.
-![neofetch output](https://github.com/[rickeyguo]/[dotfiles]/blob/[master]/neofetch.jpg?raw=true)
+![neofetch output](https://github.com/rickeyguo/dotfiles/blob/master/neofetch.jpg?raw=true)
