@@ -23,9 +23,6 @@ deleted = "x"
 [aws]
 symbol = "aws "
 
-[c]
-symbol = "C "
-
 [cobol]
 symbol = "cobol "
 
@@ -118,9 +115,6 @@ symbol = "rs "
 
 [scala]
 symbol = "scala "
-
-[spack]
-symbol = "spack "
 
 [sudo]
 symbol = "sudo "
