@@ -18,6 +18,18 @@ Plug 'jiangmiao/auto-pairs'   " automatically closes parentheses, square bracket
 call plug#end()
 "----------------------END OF PLUGINS----------------------
 
+"Hybrid" line number with highlighting on current
+:set number
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+:  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+:augroup END
+:highlight LineNr ctermfg=Gray
+:highlight CursorLineNR ctermfg=Green cterm=none
+set cursorline
+set cursorlineopt=number
+
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1 " display hidden files
 " The strange word noremap comes from Non Recursive Mapping 
